@@ -1,0 +1,12 @@
+# Pipecat with exactly the extras this demo uses:
+#   websocket -> FastAPIWebsocketTransport + Plivo serializer
+#   silero    -> SileroVADAnalyzer (onnxruntime, no torch)
+#   sarvam    -> Sarvam STT + TTS (sarvamai SDK)
+#   openrouter-> OpenRouter LLM
+#   runner    -> parse_telephony_websocket helper
+#   local     -> LocalAudioTransport (pyaudio) for Test A mic test
+pipecat-ai[websocket,silero,sarvam,openrouter,runner,local]==1.4.0
+plivo==4.61.0
+fastapi==0.138.0
+uvicorn[standard]==0.49.0
+python-dotenv==1.2.2
